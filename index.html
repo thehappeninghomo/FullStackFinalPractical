@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+
+    <title>FullStack Practical</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(rgba(31, 27, 27, 0.5), rgba(37, 33, 33, 0.5)), url("./BlackBG.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header {
+            height: 50px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 100px;
+        }
+        header a{
+            
+            color: gray;
+        }
+
+        ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        a {
+            color: white;
+            padding: 0 20px;
+            text-decoration: none;
+            line-height: 50px;
+            font-size: larger;
+        }
+
+        header .contact i {
+            color: red;
+            padding-right:10px;
+        }
+
+        img {
+            height: 60px;
+            width: 80px;
+        }
+
+        header .icon a:hover{
+            color: red;
+        }
+        section .nav ul:last-child :hover{
+            background-color: red;
+        }
+
+        section {
+            height: 93vh;
+        }
+
+        section .nav {
+            display: flex;
+            justify-content: space-between;
+            height: 70px;
+            background-color: #13161d;
+            padding: 0 100px;
+        }
+
+        section .nav ul li {
+            line-height: 70px;
+        }
+        section .nav ul:last-child li:last-child{
+            padding-right: 0;
+        }section .nav ul:first-child li{
+            padding-left: 0;
+        }
+
+        section ul li p {
+            color: white;
+            font-size: 40px;
+            font-weight: 500;
+        }
+
+        section select {
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            color: white;
+        }
+
+        
+        section .content {
+            margin-top: 200px;
+            color: white;
+            width: 70%;
+            padding: 0 100px;
+        }
+
+        section .content b {
+            font-size: 50px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        section .content p {
+            padding: 10px 0;
+            line-height: 30px;
+            letter-spacing: 1px;
+            font-size: 25px;
+        }
+
+        section .button ul li {
+            line-height: 50px;
+            margin-top: 20px;
+            margin-right: 10px
+        }
+
+        section .content .button span {
+            
+            padding: 10px 20px;
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        section .content .button span:hover {
+            background-color: white;
+            color: black;
+            border-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <ul class="contact">
+            <li>
+                <a><i class="fa fa-envelope"></i><span>info@example.com</span></a>
+            </li>
+            <li>
+                <a><i class="fa fa-mobile"></i><span>+1 5589 55488 55</span></a>
+            </li>
+        </ul>
+        <ul class="icon">
+            <li>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </li>
+        </ul>
+
+    </header>
+    <section>
+        <div class="nav">
+            <ul>
+                <li>
+                    <p><B>DAY</B></p>
+                </li>
+            </ul>
+            <ul >
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a>
+                    <select name="Drop-Down" id="Drop-Down">
+                            <option value="Drop-Down">Drop Down</option>
+                            <option value="v1">Drop-Down-1</option>
+                            <option value="v2">Drop-Down-2</option>
+                    </select>
+                </a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <b>
+                WELCOME TO DAY
+            </b>
+            <p>We are team of talented designers making website with Bootstrap</p>
+            <div class="button">
+                <ul>
+                    <li><span>GET STARTED</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
